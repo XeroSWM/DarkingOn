@@ -2,17 +2,16 @@ import { useEffect } from 'react';
 import Navbar from './components/Navbar';
 import { FaFacebook, FaInstagram, FaTiktok, FaSoundcloud, FaSpotify } from 'react-icons/fa';
 
-// Importamos AOS y sus estilos
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 function App() {
-  // Inicializamos las animaciones cuando la página carga
   useEffect(() => {
     AOS.init({
       duration: 800, 
-      once: false,    // <--- CAMBIAR A FALSE (Permite que se repita)
-      mirror: true,   // <--- NUEVO: Hace que la animación ocurra también al hacer scroll hacia arriba
+      once: false,    
+      mirror: true,   
+      offset: 120,    
       easing: 'ease-out-cubic', 
     });
   }, []);
@@ -21,11 +20,29 @@ function App() {
     <div className="bg-[#0a0a0a] text-white min-h-screen font-sans selection:bg-purple-500 selection:text-white overflow-x-hidden">
       <Navbar />
 
+      {/* --- BARRA LATERAL FLOTANTE DE REDES SOCIALES --- */}
+      <div className="fixed right-0 top-1/2 -translate-y-1/2 bg-gray-500/30 backdrop-blur-md rounded-l-2xl p-3 py-6 flex flex-col gap-6 z-50 border-y border-l border-gray-400/20 shadow-2xl">
+        <a href="https://www.facebook.com/Darking.23444444444" target="_blank" rel="noreferrer" className="text-gray-300 hover:text-white transition-all hover:scale-125 text-xl md:text-2xl">
+          <FaFacebook />
+        </a>
+        <a href="https://www.instagram.com/darking_on_official/" target="_blank" rel="noreferrer" className="text-gray-300 hover:text-white transition-all hover:scale-125 text-xl md:text-2xl">
+          <FaInstagram />
+        </a>
+        <a href="https://www.tiktok.com/@darking_on_official" target="_blank" rel="noreferrer" className="text-gray-300 hover:text-white transition-all hover:scale-125 text-xl md:text-2xl">
+          <FaTiktok />
+        </a>
+        <a href="https://soundcloud.com/darking_on_music" target="_blank" rel="noreferrer" className="text-gray-300 hover:text-white transition-all hover:scale-125 text-xl md:text-2xl">
+          <FaSoundcloud />
+        </a>
+        <a href="https://open.spotify.com/intl-es/artist/6e2ZvwSvsd7TY2fr8wPE7C" target="_blank" rel="noreferrer" className="text-gray-300 hover:text-white transition-all hover:scale-125 text-xl md:text-2xl">
+          <FaSpotify />
+        </a>
+      </div>
+
       <main>
         {/* SECCIÓN: Inicio (Hero) */}
         <section id="inicio" className="min-h-screen flex flex-col items-center justify-center text-center px-4 pt-28 md:pt-20">
           
-          {/* Foto de perfil con animación de entrada */}
           <div data-aos="zoom-in" className="w-40 h-40 md:w-56 md:h-56 mx-auto mb-8 rounded-full overflow-hidden border-2 border-gray-800 shadow-[0_0_40px_rgba(168,85,247,0.15)]">
             <img 
               src="/perfil.jpg" 
@@ -59,25 +76,6 @@ function App() {
               <p className="text-2xl md:text-3xl font-bold text-white">9.5K</p>
               <p className="text-[10px] md:text-xs text-gray-500 uppercase tracking-widest">Social Media</p>
             </div>
-          </div>
-
-          {/* Redes Sociales */}
-          <div data-aos="fade-up" data-aos-delay="400" className="flex flex-wrap justify-center gap-6 md:gap-8 mt-8 md:mt-10">
-            <a href="https://www.facebook.com/Darking.23444444444" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-[#1877F2] transition-all hover:scale-110 text-2xl md:text-3xl">
-              <FaFacebook />
-            </a>
-            <a href="https://www.instagram.com/darking_on_official/" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-[#E4405F] transition-all hover:scale-110 text-2xl md:text-3xl">
-              <FaInstagram />
-            </a>
-            <a href="https://www.tiktok.com/@darking_on_official" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-all hover:scale-110 text-2xl md:text-3xl">
-              <FaTiktok />
-            </a>
-            <a href="https://soundcloud.com/darking_on_music" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-[#FF3300] transition-all hover:scale-110 text-2xl md:text-3xl">
-              <FaSoundcloud />
-            </a>
-            <a href="https://open.spotify.com/embed/track/TRACK_ID?utm_source=generator&theme=03" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-[#1DB954] transition-all hover:scale-110 text-2xl md:text-3xl">
-              <FaSpotify />
-            </a>
           </div>
         </section>
 
@@ -122,21 +120,18 @@ function App() {
           <h2 data-aos="fade-up" className="text-3xl md:text-4xl font-bold mb-8 md:mb-12 uppercase text-center tracking-widest">Best Releases</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-            {/* Track 1 */}
             <div data-aos="fade-up" data-aos-delay="100" className="bg-gray-900/40 border border-gray-800 p-5 md:p-6 rounded-2xl hover:border-purple-500/50 transition-all group">
               <h4 className="font-bold text-lg mb-1 group-hover:text-purple-400 transition-colors">In My Heart</h4>
               <p className="text-xs text-gray-500 mb-4 uppercase tracking-tighter">+300,000 views</p>
               <iframe style={{ borderRadius: '12px' }} src="https://open.spotify.com/embed/track/0woscZisOw9EfJiQxAgY7A?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
 
-            {/* Track 2 */}
             <div data-aos="fade-up" data-aos-delay="200" className="bg-gray-900/40 border border-gray-800 p-5 md:p-6 rounded-2xl hover:border-purple-500/50 transition-all group">
               <h4 className="font-bold text-lg mb-1 group-hover:text-purple-400 transition-colors">Hold Me Through The Night</h4>
               <p className="text-xs text-gray-500 mb-4 uppercase tracking-tighter">+270,000 views</p>
               <iframe style={{ borderRadius: '12px' }} src="https://open.spotify.com/embed/track/1GqWtvwVcD2Y5kP9s5cOWT?utm_source=generator&theme=05" width="100%" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
 
-            {/* Track 3 */}
             <div data-aos="fade-up" data-aos-delay="300" className="bg-gray-900/40 border border-gray-800 p-5 md:p-6 rounded-2xl hover:border-purple-500/50 transition-all group">
               <h4 className="font-bold text-lg mb-1 group-hover:text-purple-400 transition-colors">All Over Again</h4>
               <p className="text-xs text-gray-500 mb-4 uppercase tracking-tighter">+95,000 views</p>
