@@ -39,7 +39,6 @@ function App() {
 
           {/* Redes Sociales */}
           <div className="flex gap-8 mt-10">
-            {/* AQUÍ CAMBIAS LOS LINKS */}
             <a href="https://www.facebook.com/Darking.23444444444" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-[#1877F2] transition-colors text-3xl">
               <FaFacebook />
             </a>
@@ -52,7 +51,7 @@ function App() {
             <a href="https://soundcloud.com/darking_on_music" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-[#FF3300] transition-colors text-3xl">
               <FaSoundcloud />
             </a>
-            <a href="https://open.spotify.com/intl-es/artist/6e2ZvwSvsd7TY2fr8wPE7C" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-[#1DB954] transition-colors text-3xl">
+            <a href="https://open.spotify.com/artist/TU_LINK_DE_ARTISTA_AQUI" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-[#1DB954] transition-colors text-3xl">
               <FaSpotify />
             </a>
           </div>
@@ -105,27 +104,48 @@ function App() {
             <div className="bg-gray-900 border border-gray-800 p-6 rounded-xl hover:border-purple-500 transition-colors">
               <h4 className="font-bold text-lg mb-1">In My Heart</h4>
               <p className="text-xs text-purple-400 mb-4">Revealed Recordings</p>
-              <div className="h-20 bg-gray-800 rounded flex items-center justify-center text-xs text-gray-500">
-                [Spotify Player Here]
-              </div>
+              <iframe 
+                style={{ borderRadius: '12px' }} 
+                src="https://open.spotify.com/embed/track/TU_ID_CANCION_1?utm_source=generator&theme=0" 
+                width="100%" 
+                height="152" 
+                frameBorder="0" 
+                allowFullScreen="" 
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                loading="lazy">
+              </iframe>
             </div>
 
             {/* Track 2 */}
             <div className="bg-gray-900 border border-gray-800 p-6 rounded-xl hover:border-purple-500 transition-colors">
               <h4 className="font-bold text-lg mb-1">Hold Me Through The Night</h4>
               <p className="text-xs text-purple-400 mb-4">Darking On</p>
-              <div className="h-20 bg-gray-800 rounded flex items-center justify-center text-xs text-gray-500">
-                [Spotify Player Here]
-              </div>
+              <iframe 
+                style={{ borderRadius: '12px' }} 
+                src="https://open.spotify.com/embed/track/TU_ID_CANCION_2?utm_source=generator&theme=0" 
+                width="100%" 
+                height="152" 
+                frameBorder="0" 
+                allowFullScreen="" 
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                loading="lazy">
+              </iframe>
             </div>
 
             {/* Track 3 */}
             <div className="bg-gray-900 border border-gray-800 p-6 rounded-xl hover:border-purple-500 transition-colors">
               <h4 className="font-bold text-lg mb-1">All Over Again</h4>
               <p className="text-xs text-purple-400 mb-4">Dare County</p>
-              <div className="h-20 bg-gray-800 rounded flex items-center justify-center text-xs text-gray-500">
-                [Spotify Player Here]
-              </div>
+              <iframe 
+                style={{ borderRadius: '12px' }} 
+                src="https://open.spotify.com/embed/track/TU_ID_CANCION_3?utm_source=generator&theme=0" 
+                width="100%" 
+                height="152" 
+                frameBorder="0" 
+                allowFullScreen="" 
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                loading="lazy">
+              </iframe>
             </div>
 
           </div>
