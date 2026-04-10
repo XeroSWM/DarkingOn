@@ -105,7 +105,7 @@ function App() {
             {/* Track 1: In My Heart (ID ya integrado) */}
             <div className="bg-gray-900/40 border border-gray-800 p-6 rounded-2xl hover:border-purple-500/50 transition-all group">
               <h4 className="font-bold text-lg mb-1 group-hover:text-purple-400 transition-colors">In My Heart</h4>
-              <p className="text-xs text-gray-500 mb-4 uppercase tracking-tighter">Revealed Recordings</p>
+              <p className="text-xs text-gray-500 mb-4 uppercase tracking-tighter">+300,000 views</p>
               <iframe 
                 style={{ borderRadius: '12px' }} 
                 src="https://open.spotify.com/embed/track/0woscZisOw9EfJiQxAgY7A?utm_source=generator&theme=0" 
@@ -120,7 +120,7 @@ function App() {
             {/* Track 2: Hold Me Through The Night */}
             <div className="bg-gray-900/40 border border-gray-800 p-6 rounded-2xl hover:border-purple-500/50 transition-all group">
               <h4 className="font-bold text-lg mb-1 group-hover:text-purple-400 transition-colors">Hold Me Through The Night</h4>
-              <p className="text-xs text-gray-500 mb-4 uppercase tracking-tighter">Original Mix</p>
+              <p className="text-xs text-gray-500 mb-4 uppercase tracking-tighter">+270,000 views</p>
               <iframe 
                 style={{ borderRadius: '12px' }} 
                 src="https://open.spotify.com/embed/track/1GqWtvwVcD2Y5kP9s5cOWT?utm_source=generator&theme=05" 
@@ -135,7 +135,7 @@ function App() {
             {/* Track 3: All Over Again */}
             <div className="bg-gray-900/40 border border-gray-800 p-6 rounded-2xl hover:border-purple-500/50 transition-all group">
               <h4 className="font-bold text-lg mb-1 group-hover:text-purple-400 transition-colors">All Over Again</h4>
-              <p className="text-xs text-gray-500 mb-4 uppercase tracking-tighter">Dare County</p>
+              <p className="text-xs text-gray-500 mb-4 uppercase tracking-tighter">+95,000 views</p>
               <iframe 
                 style={{ borderRadius: '12px' }} 
                 src="https://open.spotify.com/embed/track/3ZuhMYrbaBy9or4LJIq6MS?utm_source=generator&theme=06" 
