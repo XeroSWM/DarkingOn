@@ -2,6 +2,8 @@ import Navbar from './components/Navbar';
 // Importamos los íconos de react-icons
 import { FaFacebook, FaInstagram, FaTiktok, FaSoundcloud, FaSpotify } from 'react-icons/fa';
 
+import { Analytics } from "@vercel/analytics/next"
+
 function App() {
   return (
     <div className="bg-[#0a0a0a] text-white min-h-screen font-sans selection:bg-purple-500 selection:text-white">
