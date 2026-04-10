@@ -1,4 +1,6 @@
 import Navbar from './components/Navbar';
+// Importamos los íconos que vamos a utilizar
+import { FaFacebook, FaInstagram, FaTiktok, FaSoundcloud, FaSpotify } from 'react-icons/fa';
 
 function App() {
   return (
@@ -33,6 +35,26 @@ function App() {
               <p className="text-3xl font-bold text-white">9.5K</p>
               <p className="text-xs text-gray-500 uppercase tracking-widest">Social Media</p>
             </div>
+          </div>
+
+          {/* Redes Sociales */}
+          <div className="flex gap-8 mt-10">
+            {/* AQUÍ CAMBIAS LOS LINKS */}
+            <a href="https://facebook.com/TU_LINK_AQUI" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-[#1877F2] transition-colors text-3xl">
+              <FaFacebook />
+            </a>
+            <a href="https://instagram.com/TU_LINK_AQUI" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-[#E4405F] transition-colors text-3xl">
+              <FaInstagram />
+            </a>
+            <a href="https://tiktok.com/@TU_LINK_AQUI" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors text-3xl">
+              <FaTiktok />
+            </a>
+            <a href="https://soundcloud.com/TU_LINK_AQUI" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-[#FF3300] transition-colors text-3xl">
+              <FaSoundcloud />
+            </a>
+            <a href="https://open.spotify.com/artist/TU_LINK_AQUI" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-[#1DB954] transition-colors text-3xl">
+              <FaSpotify />
+            </a>
           </div>
         </section>
 
@@ -77,7 +99,6 @@ function App() {
         <section id="musica" className="py-24 px-6 max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 uppercase text-center">Best Releases</h2>
           
-          {/* Aquí irán los IFRAMES de Spotify/Soundcloud. Por ahora pongo las tarjetas visuales */}
           <div className="grid md:grid-cols-3 gap-6">
             
             {/* Track 1 */}
