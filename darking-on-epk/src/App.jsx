@@ -2,7 +2,7 @@ import Navbar from './components/Navbar';
 // Importamos los íconos de react-icons
 import { FaFacebook, FaInstagram, FaTiktok, FaSoundcloud, FaSpotify } from 'react-icons/fa';
 
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
