@@ -40,19 +40,19 @@ function App() {
           {/* Redes Sociales */}
           <div className="flex gap-8 mt-10">
             {/* AQUÍ CAMBIAS LOS LINKS */}
-            <a href="https://facebook.com/TU_LINK_AQUI" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-[#1877F2] transition-colors text-3xl">
+            <a href="https://www.facebook.com/Darking.23444444444" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-[#1877F2] transition-colors text-3xl">
               <FaFacebook />
             </a>
-            <a href="https://instagram.com/TU_LINK_AQUI" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-[#E4405F] transition-colors text-3xl">
+            <a href="https://www.instagram.com/darking_on_official/" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-[#E4405F] transition-colors text-3xl">
               <FaInstagram />
             </a>
-            <a href="https://tiktok.com/@TU_LINK_AQUI" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors text-3xl">
+            <a href="https://www.tiktok.com/@darking_on_official" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors text-3xl">
               <FaTiktok />
             </a>
-            <a href="https://soundcloud.com/TU_LINK_AQUI" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-[#FF3300] transition-colors text-3xl">
+            <a href="https://soundcloud.com/darking_on_music" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-[#FF3300] transition-colors text-3xl">
               <FaSoundcloud />
             </a>
-            <a href="https://open.spotify.com/artist/TU_LINK_AQUI" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-[#1DB954] transition-colors text-3xl">
+            <a href="https://open.spotify.com/intl-es/artist/6e2ZvwSvsd7TY2fr8wPE7C" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-[#1DB954] transition-colors text-3xl">
               <FaSpotify />
             </a>
           </div>
