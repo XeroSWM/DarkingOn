@@ -46,7 +46,7 @@ function App() {
         <a href="https://soundcloud.com/darking_on_music" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-all hover:scale-125 text-xl md:text-2xl">
           <FaSoundcloud />
         </a>
-        <a href="https://open.spotify.com/embed/track/TRACK_ID?utm_source=generator&theme=03" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-[#1DB954] transition-all hover:scale-125 text-xl md:text-2xl">
+        <a href="https://open.spotify.com/intl-es/artist/6e2ZvwSvsd7TY2fr8wPE7C" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-[#1DB954] transition-all hover:scale-125 text-xl md:text-2xl">
           <FaSpotify />
         </a>
       </div>
